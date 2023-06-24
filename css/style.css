@@ -7,7 +7,7 @@ html{
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color: #EDDDD4; 
+  background-color: white; 
   
 }
 
@@ -19,7 +19,9 @@ ul {
   
 
 }
-
+#navbar{
+  position: sticky;
+}
  div a {
   float: left;
   text-decoration: none;
@@ -29,7 +31,7 @@ ul {
 } 
 
 li {
-  display: inline-flexbox;
+  display: inline;
   float: right;
 }
 
@@ -47,14 +49,17 @@ li a {
   font-weight: bolder;
   padding: auto;
   text-align: center;
+  margin-top: 0.17em;
 }
 
 img {
   image-rendering: crisp-edges;
+  float: right;
   
 }
 
 #snehal-img {
+  align-items: end;
   float: right;
   width: 20vw;
   margin-top: 3vw;
@@ -74,7 +79,7 @@ h1 {
   margin-right: auto;
   margin-top: 2em;
   
-  float:left;
+
   
 }
 
@@ -170,11 +175,13 @@ h1 {
 }
 #whoi{
   width:6em;
+
   
 }
 
 section{
   display: flex;
+  margin-bottom: 5em;
   
 }
 #about{
@@ -182,16 +189,19 @@ section{
   position: absolute;
   top: 130%;
   right: 0.7em;
-  transform: translateY(-30%);
+  transform: translateY(-20%);
   display: flex;
   flex-direction: column;
   
   
 }
+
 .card{
+  list-style: none;
   margin-top: -1em;
   margin-left: 4em;
-  width:50%;
+  margin-left: 4em;
+  width:55%;
   float: left;
   font-size: larger;
 }
@@ -210,17 +220,37 @@ h2{
   
   
   float:left;
+  margin-top: 3em;
+  
 }
+
 .container{
   position: relative;
   max-width: 500px;
-  width: 100%;
-  background: #EDDDD4;
+  width: 48%;
+  background: white;
   margin: 0 15px;
   padding: 10px 20px;
   border-radius: 7px;
   margin-left: 4em ;
 }
+.skill-container{
+  display: flex;
+  
+  justify-content: space-between;
+}
+.picture-container{
+  display: inline;
+
+}
+.picture-container img{
+  width: 23%;
+  height: 60%;
+  margin-right: 6em;
+  border-radius: 50px;
+  transform: translateY(-105%);
+}
+
 .container .skill-box{
   width: 100%;
   margin: 25px 0;
@@ -297,7 +327,7 @@ h2{
 
 #projects {
   color: #333;
-  transform: translateY(90%);
+  transform: translateY(70%);
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -308,13 +338,13 @@ h2{
   margin-top: 8em;
   display: flex;
   justify-content: space-between;
-  padding-right: 2em;
+  padding-right: 7em;
 }
 
 .image-container img {
-  margin-left:3em ;
-  width: 45%;
-  border-radius: 10%;
+  margin-left:1em ;
+  width: 50%;
+  border-radius: 20px;
 }
 
 .image-container figcaption {
@@ -322,9 +352,8 @@ h2{
   font-style: italic;
   color: #333;
   align-items: end;
-}
-#animalimg{
-  width: 60%;
+  font-size: 1.1em;
+  margin-left: 2em;
 }
 .image-container img:hover{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
@@ -336,4 +365,88 @@ h2{
       z-index: -1;
       
   }
- 
+  .button-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .button {
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    margin-top: 1.75em;
+    font-weight: 350;
+    font-style: normal;
+  }
+
+  .button:hover{
+    background-color: #545353 ;
+  }
+
+  #contact{
+    transform: translateY(80%);
+    color: #333;
+    display: grid;
+    
+  }
+  #contact-hdr{
+    line-height: 1em;
+    margin-bottom: 2em;
+  
+  }
+
+  .contact-container{
+    display: flex;
+    justify-content: space-around;
+    
+  }
+
+  .contact-info,
+  .contact-form{
+    
+    width: 20%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 9%;
+    margin-top: 0;
+  
+  }
+  .contact-info{
+    float: right;
+    margin-right: 5em;
+    font-size: large;
+  }
+  .contact-form{
+    width: 70%;
+  }
+  .contact-form form{
+    display: grid;
+    grid-gap: 10px;
+  }
+  .contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #EDDDD4;
+  border-radius: 20px;
+}
+.contact-form input[type="submit"] {
+  margin: 1em;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.contact-form input[type="submit"]:hover {
+  background-color: #545353;
+}
+.contact-list{
+  line-height: 2em;
+  font-size: xx-large;
+  font-weight: bold;
+}
