@@ -16,14 +16,14 @@ particlesJS('body-bg',
   {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 50,
         "density": {
           "enable": true,
           "value_area": 800
         }
       },
       "color": {
-        "value": "#333"
+        "value": ["#BD10E0","#B8E986","#50E3C2","#FFD300","#E86363"]
       },
       "shape": {
         "type": "circle",
@@ -32,7 +32,7 @@ particlesJS('body-bg',
           "color": "#000000"
         },
         "polygon": {
-          "nb_sides": 5
+          "nb_sides": 0
         },
         "image": {
           "src": "img/github.svg",
