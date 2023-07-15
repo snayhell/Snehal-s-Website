@@ -9,43 +9,47 @@
   
   <body >
     
-<!-- partial:index.partial.html -->
+<!-- navbar -->
 <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,800&display=swap" rel="stylesheet">
 <ul class="navbar">
   <div id="home"><a href="#home">Snehal.</a></div>
-  <li id="contact-btn"><a  href="Modern Minimalist CV Resume (2).pdf">Resume</a></li>
+  <li id="contact-btn"><a  href="#footer">Connect</a></li>
   <li><a href=#contact>Contact</a></li>
   <li><a href=#projects>Projects</a></li>
   
   <li><a href=#about>About</a></li>
 </ul>
 
+
+
+<!-- home section starts -->
 <section id="home">
   <div id="body-bg" ></div>
+  <article class="name-tag">
 <h1 class="rainbow-text">I'm Snehal<br>
-  A<br> <span class="auto-type"></span><h1>
-    <ul class="socials">
-    <li  ><a href="https://www.linkedin.com/in/snehal-poptani-521732228/">
-      <i class="fa-brands fa-linkedin-in"></i></a>
-    </li>
-    <li  ><a href="https://github.com/snayhell">
-      <i class="fa-brands fa-github"></i></a>
-    </li>
-    <li ><a href="mailto:poptanisnehal@gmail.com">
-      <i class="fa-regular fa-file"></i></a>
-    </li>
-    </ul>
+  A <span class="auto-type"></span></h1>
+  <div class="about-btn">
+    <button class="rainbow-text"id="about-id"><a href="#about"> About Me </a></button>
+  </div>
+  </article>
+    <div class="picture-container">
+      <img src="snehal.png" alt="Your Picture">
+    </div>
   </section>
   
   
+  <!-- about section starts -->
   <section id="about">
-    <h1 id="whoi">Who am I?</h1>
-    <div class="about-content">
-      
-      <ul class="card">
-        <li class="about-card">I am a computer engineering student with a passion for sports and a quick learning ability. Combining my love for technology and physical activities, I strive to excel in both realms. I embrace the challenges of computer engineering and find joy in sports, utilizing my quick learning skills to stay ahead in this ever-evolving field.</li>
-      </ul>
-    </div>
+    <div class="about-me">
+      <h1 id="whoi">Who am I?</h1>
+      <div class="about-content">
+        <ul class="card">
+          <li class="about-card">I am a computer engineering student with a passion for sports and a quick learning ability. Combining my love for technology and physical activities, I strive to excel in both realms. I embrace the challenges of computer engineering and find joy in sports, utilizing my quick learning skills to stay ahead in this ever-evolving field.</li>
+          <li><a href="Modern Minimalist CV Resume (2).pdf" class="neon-button">Download CV <i class="fa-solid fa-arrow-down"></i></a></li>
+        </ul>
+      </div>
+     </div>
+    <!-- skillbar -->
      <h2 class="skill-hdr">Skills</h2>
      <div class="skill-container">
      <div class="container">
@@ -83,16 +87,38 @@
       </div>
       
   </div>
-  </div>
-  <div class="picture-container">
-    <img src="snehal.jpg" alt="Your Picture">
-  </div>
-
-
+  <!-- circle orbits -->
+  <div id="circle-orbit-container">
+      
+    <!-- Circles closest to the central point -->
+    <div id="inner-orbit">
+      
+      <div class="inner-orbit-cirlces"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 30 30">
+        <path d="M25.428,3.333C25.238,3.121,24.967,3,24.683,3H5.317C5.033,3,4.762,3.121,4.572,3.333c-0.19,0.212-0.28,0.495-0.249,0.777 l2.202,19.823c0.044,0.403,0.329,0.74,0.719,0.851l7.48,2.137c0.09,0.026,0.183,0.039,0.275,0.039s0.185-0.013,0.275-0.039 l7.48-2.137c0.39-0.111,0.674-0.448,0.719-0.851L25.676,4.11C25.708,3.828,25.618,3.545,25.428,3.333z M20.629,10.43h-8.93 l0.212,2.542h8.503l-0.638,7.51L15.003,22l-0.047-0.015l-4.72-1.505L9.978,17.42h2.312l0.101,1.189l2.637,0.581l2.591-0.582 l0.275-3.213h-8.09L9.178,8h11.659L20.629,10.43z"></path>
+    </svg></div>
+    </div>
   
-    </section>
+    <!-- Circles second closest to the central point -->
+    <div id="middle-orbit">
+      <div class="middle-orbit-cirlces"><svg class="css-svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 30 30">
+        <path d="M25.428,3.333C25.238,3.121,24.967,3,24.683,3H5.317C5.033,3,4.762,3.121,4.572,3.333c-0.19,0.212-0.28,0.495-0.249,0.777 l2.202,19.823c0.044,0.403,0.329,0.74,0.719,0.851l7.48,2.137c0.09,0.026,0.183,0.039,0.275,0.039s0.185-0.013,0.275-0.039 l7.48-2.137c0.39-0.111,0.674-0.448,0.719-0.851L25.676,4.11C25.708,3.828,25.618,3.545,25.428,3.333z M20.516,13.074l-0.446,7.285 l-5.038,1.647l-5.038-1.647l-0.191-3.484h2.55l0.064,1.584l2.615,0.887l2.615-0.887l0.191-2.85h-5.612l-0.127-2.534h5.867 l0.191-2.534H9.356L9.165,8.006h11.67L20.516,13.074z"></path>
+    </svg></div>
+    </div>
+  
+    <!-- Circles furthest away to the central point -->
+    <div id="outer-orbit">
+      <div class="outer-orbit-cirlces"><svg class="js-svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+        <path d="M45.274,2.325C45.084,2.118,44.817,2,44.536,2H5.464C5.183,2,4.916,2.118,4.726,2.325S4.443,2.81,4.468,3.089l3.52,39.427 c0.037,0.412,0.324,0.759,0.722,0.873l16.01,4.573C24.809,47.987,24.902,48,24.994,48s0.185-0.013,0.274-0.038l16.024-4.573 c0.398-0.114,0.685-0.461,0.722-0.873l3.518-39.427C45.557,2.81,45.463,2.532,45.274,2.325z M12,29.004l7,1.942V11h4v26l-11-3.051 V29.004z M38.054,22L37,34.25L27,37v-4.601l6.75-1.855l0.25-3.75L27,28V11h12l-0.345,4H31v8L38.054,22z"></path>
+    </svg></div>
+    </div>
+  
+  </div>
+  </div>
+  </section>
+  <!-- about section ends -->
 
 
+    <!-- projects section starts -->
   <section id="projects">
     <h2 id="project-hdr">Projects</h2>
     <figure class="image-container">
@@ -116,8 +142,12 @@
     </figure>
   </section>
 
+
+
+
+  <!-- contact section starts -->
   <section id="contact">
-    <h2 id="contact-hdr">Contact Information</h2>
+    <h2 id="contact-hdr">Contact Me</h2>
     <div class="contact-container">
       <div class="contact-info">
         
@@ -127,8 +157,7 @@
         <p><span class="contact-list"><i class="fa-solid fa-phone"> : </i> </span> <br> 7769836501</p>
       </div>
       <div class="contact-form">
-      
-        <form>
+      <form>
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required>
           
@@ -145,7 +174,24 @@
     
   </section>
 
-  
+
+
+
+  <!-- footer section starts -->
+   <section id="footer" class="footer">
+       <ul class="socials">
+        <li  ><a href="https://www.linkedin.com/in/snehal-poptani-521732228/">
+          <i class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+        <li  ><a href="https://github.com/snayhell">
+          <i class="fa-brands fa-github"></i></a>
+        </li>
+        <li ><a href="mailto:poptanisnehal@gmail.com">
+          <i class="fa-solid fa-envelope"></i></a>
+        </li>
+        </ul>
+    
+  </section>
 
 
 
