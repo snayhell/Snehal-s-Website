@@ -32,7 +32,7 @@ particlesJS('body-bg',
           "color": "#000000"
         },
         "polygon": {
-          "nb_sides": 0
+          "nb_sides": 5
         },
         "image": {
           "src": "img/github.svg",
@@ -64,19 +64,19 @@ particlesJS('body-bg',
         "enable": true,
         "distance": 150,
         "color": "#333",
-        "opacity": 0.4,
+        "opacity": 0.2,
         "width": 1
       },
       "move": {
         "enable": true,
-        "speed": 6,
+        "speed": 4,
         "direction": "none",
         "random": false,
         "straight": false,
         "out_mode": "out",
         "attract": {
           "enable": false,
-          "rotateX": 600,
+          "rotateX": 0,
           "rotateY": 1200
         }
       }
